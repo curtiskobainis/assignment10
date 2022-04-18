@@ -1,0 +1,40 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: yellow;
+    position: absolute;
+    height: 25%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#resolution {
+    border: 2px solid red;
+    display: flex;
+    height: 75px;
+    width: 200px;
+    align-items: center;
+}
+
+@keyframes resolution { 
+    0% {border-color: red;} 
+    25% {border-color: yellow;}
+    50% {border-color: blue;} 
+    100% {border-color: green;}
+    } 
+    #resolution {  
+    animation-name: resolution; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    }
